@@ -3,13 +3,19 @@ const app = express();
 
 const port = 3000;
 
+// start port at 3000
+app.get("/", (req, res) => {
+    res.send("Welcome to the Gitpub App!")
+})
 
+// index
+app.get("/drinks/:id", (req, res) => {
+    res.render('index_drinks.ejs', drinks);
+})
 
-
-
-app.listen(port, (req, res) => {
-    console.log(req)
-    res.send(`Listening on port`, port)
+// listen to me dang it !
+app.listen(3000, (req, res) => {
+    console.log(`Listening on port`, 3000)
 
 });
 
