@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-
+const drinks = require('./modles/drinks');
 const port = 3000;
 
 // start port at 3000
@@ -9,12 +9,17 @@ app.get("/", (req, res) => {
 })
 
 // index
-app.get("/drinks/:id", (req, res) => {
-    res.render('index_drinks.ejs', drinks);
+app.get("/drinks", (req, res) => {
+    res.render('drinks_index.ejs', {allDrinks : drinks})
+});
+
+app.get("/drink/:id", (req, res) => {
+    res.send(req.params.id)
 })
 
+
 // listen to me dang it !
-app.listen(3000, (req, res) => {
+app.listen(port, (req, res) => {
     console.log(`Listening on port`, 3000)
 
 });
