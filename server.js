@@ -6,7 +6,7 @@ const port = 3000;
 
 // start port at 3000
 app.get("/", (req, res) => {
-    res.send("Welcome to the Gitpub App!")
+    res.send(`Welcome to the Gitpub App! Go to <a herf="/pub">localhost3000/pub</a> to get started!`)
 });
 
 // index
