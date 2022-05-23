@@ -41,3 +41,5 @@ const drinks = [
       image: "https://i.imgur.com/MbVdwZz",
     },
   ]
+  module.export = drinks;
+  console.log(module)

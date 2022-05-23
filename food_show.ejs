@@ -7,8 +7,22 @@
     <title>the food</title>
 </head>
 <body>
-   
+   <style type="text/css">
+    body {
+       color: blanchedalmond;
+       background-color: steelblue;
 
-    </style>
+   }
+   li {
+       text-transform: capitalize;
+   }
+</style>
+
+<h1>FOOD BAR</h1>
+<h2><%= food.name %></h2>
+<% let code = ".jpg" %>
+
+<img src="<% food.image + code %>" alt="Here's-Photo">
+<h3>Price $<%= food.price %></h3>
 </body>
 </html>

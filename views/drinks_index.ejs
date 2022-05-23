@@ -1,34 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pub it Up</title>
-<style type="text/css">
-    body{
+  </head>
+
+  <body>
+    <h1>Welcome to git Pub</h1>
+
+    <style type="text/css">
+      body {
         color: blanchedalmond;
         background-color: steelblue;
-    }
+      }
+    </style>
 
-</style>
+    <% for (let index = 0; index <totalDrinks.length; index++) { %>
+    <li>
+      <a href="drinks/<%= index %>"> 
 
-</head>
-
-
-<body>
-
-
-    <h1>Welcome to git Pub</h1>
- <ul>  
-<% for(let i = 0; i < allDrinks.length; i++) { %>
-<li>
-    <a href="/drinks/<%= i %>">
-        <%= allDrinks[i].name; %>
-    </a>
-</li>
+          <%= totalDrinks[index].name; %> 
+        </a>
+    </li>
     <% } %>
-</ul>
-</body>
-
+  </body>
 </html>

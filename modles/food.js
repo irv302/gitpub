@@ -36,3 +36,5 @@ const food = [
       image: "https://i.imgur.com/QZW3gJg.jpg",
     },
   ]
+  module.export = food;
+  console.log(module)
