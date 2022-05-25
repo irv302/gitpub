@@ -8,7 +8,7 @@
   </head>
 
   <body>
-    <h1>Welcome to git Pub</h1>
+    <h1>Welcome to git Pub food</h1>
 
     <style type="text/css">
       body {
@@ -17,15 +17,13 @@
       }
     </style>
 
-    <% for (let index = 0; index < totalDrinks.length; index++) { %>
-    <ul>
-      <li>
-      <a href="drinks/<%= index %>"> 
-
-          <%= totalDrinks[index].name; %> 
+    <% for(let index = 0; index <totalFood.length; index++) { %>
+    <li>
+      <a href="food/<%= index %>"> 
+          
+          <%= totalFood[index].name; %> 
         </a>
     </li>
-    </ul>
     <% } %>
   </body>
 </html>
